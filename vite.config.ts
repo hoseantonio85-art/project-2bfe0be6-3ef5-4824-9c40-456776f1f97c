@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  base: 'project-2bfe0be6-3ef5-4824-9c40-456776f1f97c',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
